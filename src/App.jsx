@@ -20,9 +20,9 @@ function App() {
 
         <div className="left">
 
-          <h1>Nilesh Toshniwal</h1>
+          <h1>Kamlesh toshniwal Toshniwal</h1>
 
-          <h3>Full-Stack & Cross-Platform Developer</h3>
+          <h3>Full-Stack & Cross-Platform Developer kamlesh toshniwal</h3>
 
           <p>
             I build scalable financial and business applications using
