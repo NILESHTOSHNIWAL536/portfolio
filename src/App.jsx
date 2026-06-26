@@ -1,122 +1,99 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started Nilesh Toshniwal</h1>
+    <div className="container">
+
+      <nav className="navbar">
+        <div className="logo">NT</div>
+
+        <ul>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Projects</li>
+          <li>Skills</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <section className="hero">
+
+        <div className="left">
+
+          <h1>Nilesh Toshniwal</h1>
+
+          <h3>Full-Stack & Cross-Platform Developer</h3>
+
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            I build scalable financial and business applications using
+            React, Next.js, Flutter and Node.js.
           </p>
+
+          <div className="stats">
+
+            <div>
+              <h2>3+</h2>
+              <span>Years Experience</span>
+            </div>
+
+            <div>
+              <h2>2</h2>
+              <span>Live Apps</span>
+            </div>
+
+            <div>
+              <h2>15K+</h2>
+              <span>Active Users</span>
+            </div>
+
+          </div>
+
+          <div className="buttons">
+            <button>Resume</button>
+            <button>StakePlot</button>
+            <button className="outline">Valeasy</button>
+          </div>
+
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+
+        <div className="right">
+
+          <div className="card">
+
+            <h2>Frontend</h2>
+
+            <div className="tags">
+              <span>React</span>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Tailwind</span>
+            </div>
+
+            <h2>Mobile</h2>
+
+            <div className="tags">
+              <span>Flutter</span>
+              <span>Bloc</span>
+              <span>Riverpod</span>
+            </div>
+
+            <h2>Backend</h2>
+
+            <div className="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
